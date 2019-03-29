@@ -1,0 +1,286 @@
+/* ***************************
+    SMACSS
+    Order: base, layout, module, state;
+   *************************** */
+
+/************Base Rules****************/
+html {
+    height: 98.5%;
+}
+
+
+body {
+    font-family: 'Oswald', serif;
+    margin: 0 auto;
+
+}
+
+body p {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+}
+
+
+footer {
+    display: flex;
+    padding-left: 5%;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 95%;
+}
+
+footer p {
+    color: #fffece;
+    font-size: 25px;
+}
+
+article {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 960px;
+}
+
+article h1 {
+    background-image: url(../images/uk.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto;
+    color: white;
+    font-size: 40px;
+    margin-top: 15%;
+    margin-bottom: 0;
+    padding-left: 6%;
+}
+
+nav {
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+}
+
+nav li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 22px;
+    
+}
+
+nav a{
+    padding: 2px 5px;
+}
+
+@keyframes fly {
+    0% { 
+        transform: translateX(-100%);       
+ }
+    100% { 
+        transform: translateX(0%); 
+ }
+}
+
+/************Layout Rules****************/
+
+/************Module Rules****************/
+.firstcontainer {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container2, .container3 {
+    background-image: url(../images/background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ .container4 {
+    background-image: url(../images/background3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+ }
+
+
+.banner {
+    display: flex;
+    padding-left: 5%;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 1%;
+}
+
+.banner h2 {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 18px;
+    font-size: 42px;
+    color: #fffece;
+    margin-left: 0;
+    animation: fly 2s linear;
+}
+
+
+.banner2 {
+    display: flex;
+    padding-left: 5%;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1080px;  
+    border-bottom: 3px solid #65b6b0;
+}
+
+.banner2 h2 {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 18px;
+    font-size: 42px;
+    color: #fffece;
+    margin-left: 0;
+}
+
+.homebotright {
+    background-color: #003f51;
+    margin-top: 2%;
+    height: 40px;
+    margin-right: 3%;
+    border-style: solid;
+    border-image: linear-gradient(#071bf9, #ffe787, #f90707);
+    border-image-slice: 1;
+    border-width: 4px;  
+}
+
+.homebotleft p{
+    color: #347f89;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+}
+
+.homebotright p {
+    background: -webkit-linear-gradient(#f90707, white,#071bf9 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oswald', serif;
+    color: #a5fcff;
+    margin: 0 auto;
+}
+
+.footer1 {
+    position: fixed;
+    top: 88.8vh;
+
+}
+
+.footer2 {
+    max-width: 1080px;
+}
+
+
+.slider {
+    margin: 0 auto;
+    max-width: 510px;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.text p{
+    line-height:1.5em;
+    font-size: 17px;
+    padding: 10px;
+    color: #edfffb;
+    border-style: solid;
+    border-image: linear-gradient(#071bf9, #ffe787, #f90707);
+    border-image-slice: 1;
+    border-width: 5px;  
+}
+
+.text h3 {
+    background-image: url(../images/uk.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto;
+    color: white;
+    border-top: 3px solid #65b6b0;
+    border-bottom: 3px solid #65b6b0;
+    font-size: 25px;
+    padding-left: 12%;
+}
+
+.text ul {
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+
+.text1 {
+    margin-top: 5%;
+}
+
+.full-width {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -250px;
+    width: 500px;
+    height: 500px;
+    color: white;
+    border-style: solid;
+    border-image: linear-gradient(#071bf9, #ffe787, #f90707);
+    border-image-slice: 1;
+    border-width: 4px;   
+    font-size: 65px; 
+    text-align: center;
+}
+
+
+.full-width a {
+    color: white;
+}
+
+/************State Rules****************/
+
+.is-current{
+    background-color: #00384c;
+    color: white;
+}
+
+/************Theme Rules****************/
+
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 10px white;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: linear-gradient(#071bf9, #ffe787, #f90707); 
+box-shadow: inset 0 0 6px white; 
+}
+
+
+
+
