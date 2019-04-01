@@ -19,38 +19,15 @@
 
     </header>
 
+  <?php include('connect-db.php');?>
+
   <div class="form">
 
-  <form method="post" action="form-processor.php">
+  <form method="post" action="new.php">
         <!-- all form elements and other HTML in here -->
-        Name: <input type="text" name="name"><br>
-        Your E-mail: <input type="text" name="email"><br>
-        Password: <input type="password" name="password"><br>
-        Re-enter Password: <input type="password"><br>
-
-        <fieldset>
-        <legend> Quick Survey About British Musicians </legend>
-
-        <h2 id="question1">Which of the following songs is from British Artist? </h2>
-
-        <label for="Your Song"> Your Song</label>
-        <input type="checkbox" name="song1" id="Your Song" value="Your Song"><br>
-        <label for="Firework"> Firework</label>
-        <input type="checkbox" name="song2" id="Firework" value="Firework"><br>
-        <label for="Sicko Mode"> Sicko Mode</label>
-        <input type="checkbox" name="song3" id="Sicko Mode" value="Sicko Mode"><br>
-        <label for="Timber"> Timber</label>
-        <input type="checkbox" name="song4" id="Timber" value="Timber"><br>
-
-        
-        <h2 id="question2">Which of the following artists is not in from UK?</h2>
-
-        <input type="radio" name="singer" id="Tom Odell" value="Tom Odell"> Tom Odell<br>
-        <input type="radio" name="singer" id="Sam Smith" value="Sam Smith"> Sam Smith<br>
-        <input type="radio" name="singer" id="James Arthur" value="James Arthur"> James Arthur<br> 
-        <input type="radio" name="singer" id="Katy Perry" value="Katy Perry"> Katy Perry<br>
-
-        </fieldset>
+        First Name: <input type="text" name="firstname" value="<?php echo $firstname; ?>"/><br>
+        Last Name: <input type="text" name="lastname" value="<?php echo $lastname; ?>"/><br>
+        E-mail: <input type="text" name="email" value="<?php echo $email; ?>"/><br>
 
 
         <h4 id="end">Tell us more you want to know about British Musicans</h4>
@@ -62,11 +39,7 @@
 
 
 
-<!-- Write stuff here that the browser will ignore as commenting outcode appears here -->
-
 
 </div><!--.container-->
 <?php include "inc/scripts.php"; ?>
 </body>
-
-</html>
