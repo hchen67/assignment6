@@ -21,8 +21,8 @@
 
 
   <div class="form">
-
-  <form method="post" action="new.php">
+  <?php include('connect-db.php');?>
+  <form method="post" action="form-processor.php">
         <!-- all form elements and other HTML in here -->
         <div class="form-layout">
           <div>First Name: <input type="text" name="firstname" value="<?php echo $firstname; ?>"/></div>
@@ -40,5 +40,6 @@
 
 
 </div><!--.container-->
+
 <?php include "inc/scripts.php"; ?>
 </body>
