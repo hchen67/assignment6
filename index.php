@@ -39,7 +39,7 @@
 
 
     <div class='homebotright'>
-	        <p><a href="subscribe.php">Subscribe</a></p>
+	        <p><a href="subscribe.php">Sign Up</a></p>
     </div>
 
     </footer>

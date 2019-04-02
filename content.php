@@ -74,7 +74,7 @@
                 <h3>Music Career</h3>
                   <p>Sheeran has sold more than 150 million records worldwide, making him one of the world's best-selling music artists.[5][6] Two of his albums are in the list of the best-selling albums in UK chart history: x at number 20, and ÷ at number 34. An alumnus of the National Youth Theatre in London, as an actor Sheeran has portrayed a recurring role on The Bastard Executioner. In 2019 he will appear in the Richard Curtis/Danny Boyle film Yesterday.</p>
                 </div>
-                
+
                 <div>
                 <h3>Awards</h3>
                   <ul>
@@ -143,7 +143,7 @@
 
 
     <div class='homebotright'>
-            <p><a href="subscribe.php">Subscribe</a></p>
+            <p><a href="subscribe.php">Sign Up</a></p>
     </div>
 
     </footer>

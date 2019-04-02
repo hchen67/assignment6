@@ -38,7 +38,7 @@
 <main class="full-width">
   <h2>Thank You 
   </h2>
-  <p>Go back to <a href="subscribe.php">the Subscribes page</a>.</p>
+  <p>Go back to the <a href="subscribe.php">Sign Up Page</a>.</p>
 </main>
 
 </body>
