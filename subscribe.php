@@ -21,13 +21,13 @@
 
 
   <div class="form">
-  <?php include('connect-db.php');?>
+  
   <form method="post" action="form-processor.php">
         <!-- all form elements and other HTML in here -->
         <div class="form-layout">
-          <div>First Name: <input type="text" name="firstname" value="<?php echo $firstname; ?>"/></div>
-          <div>Last Name: <input type="text" name="lastname" value="<?php echo $lastname; ?>"/></div>
-          <div>E-mail: <input type="text" name="email" value="<?php echo $email; ?>"/></div>
+          <div>First Name: <input type="text" name="firstname" /></div>
+          <div>Last Name: <input type="text" name="lastname"/></div>
+          <div>E-mail: <input type="text" name="email"/></div>
         </div>
         <h4 id="end">Tell us more you want to know about British Musicans</h4>
         <textarea rows="4" cols="50" name="comment">Enter text here...</textarea>
