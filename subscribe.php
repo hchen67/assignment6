@@ -19,15 +19,14 @@
 
     </header>
 
-  <?php include('connect-db.php');?>
 
   <div class="form">
 
-  <form method="post" action="new.php">
+  <form method="post" action="form-processor.php">
         <!-- all form elements and other HTML in here -->
-        First Name: <input type="text" name="firstname" value="<?php echo $firstname; ?>"/><br>
-        Last Name: <input type="text" name="lastname" value="<?php echo $lastname; ?>"/><br>
-        E-mail: <input type="text" name="email" value="<?php echo $email; ?>"/><br>
+        First Name: <input type="text" name="firstname"><br>
+        Last Name: <input type="text" name="lastname"><br>
+        E-mail: <input type="text" name="email"><br>
 
 
         <h4 id="end">Tell us more you want to know about British Musicans</h4>
@@ -41,5 +40,6 @@
 
 
 </div><!--.container-->
+
 <?php include "inc/scripts.php"; ?>
 </body>

@@ -1,10 +1,17 @@
 <?php
-// connect to the database
-include('connect-db.php');
+  // 1. Create a database connection
+  require_once("inc/connect-db.php");
 
-// get results from database
-$result = mysqli_query($connection, "SELECT * FROM subscribe");
+  $insertData1 = Trim(stripslashes($_POST['firstname'])); 
+  $insertData2 = Trim(stripslashes($_POST['lastname'])); 
+  $insertData3 = Trim(stripslashes($_POST['email'])); 
+  
+  // 2. Perform database query
+  $query  = "INSERT INTO subscribe (firstname, lastname, email) VALUES ('$insertData1','$insertData2','$insertData3')";
+  $result = mysqli_query($connection, $query);
 ?>
+
+
 
 <!DOCTYPE html>
   <html lang="en">
@@ -29,20 +36,17 @@ $result = mysqli_query($connection, "SELECT * FROM subscribe");
 
 
 <main class="full-width">
-  <h2>Thank You</h2>
+  <h2>Thank You 
+  </h2>
   <p>Go back to <a href="subscribe.php">the Subscribes page</a>.</p>
 </main>
-
-
-
-<!-- Write stuff here that the browser will ignore as commenting outcode appears here -->
-
-
 
 </body>
 
 </html>
+
 <?php
-  mysqli_free_result($result);
+
+  // 5. Close database connection
   mysqli_close($connection);
 ?>
