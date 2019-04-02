@@ -19,22 +19,21 @@
 
     </header>
 
-  <?php include('connect-db.php');?>
 
   <div class="form">
 
   <form method="post" action="new.php">
         <!-- all form elements and other HTML in here -->
-        First Name: <input type="text" name="firstname" value="<?php echo $firstname; ?>"/><br>
-        Last Name: <input type="text" name="lastname" value="<?php echo $lastname; ?>"/><br>
-        E-mail: <input type="text" name="email" value="<?php echo $email; ?>"/><br>
-
-
+        <div class="form-layout">
+          <div>First Name: <input type="text" name="firstname" value="<?php echo $firstname; ?>"/></div>
+          <div>Last Name: <input type="text" name="lastname" value="<?php echo $lastname; ?>"/></div>
+          <div>E-mail: <input type="text" name="email" value="<?php echo $email; ?>"/></div>
+        </div>
         <h4 id="end">Tell us more you want to know about British Musicans</h4>
         <textarea rows="4" cols="50" name="comment">Enter text here...</textarea>
-
-
+      <div class="finish">
         <input type="submit" id="Finish" value="Finish">
+      </div>
     </form>
 
 
