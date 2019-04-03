@@ -2,15 +2,20 @@
   // 1. Create a database connection
   require_once("inc/connect-db.php");
 
-  $insertData1 = Trim(stripslashes($_POST['firstname'])); 
-  $insertData2 = Trim(stripslashes($_POST['lastname'])); 
-  $insertData3 = Trim(stripslashes($_POST['email'])); 
+  $firstname = Trim(stripslashes($_POST['firstname'])); 
+  $lastname = Trim(stripslashes($_POST['lastname'])); 
+  $email = Trim(stripslashes($_POST['email'])); 
   
   // 2. Perform database query
-  $query  = "INSERT INTO subscribe (firstname, lastname, email) VALUES ('$insertData1','$insertData2','$insertData3')";
+  $query  = "INSERT INTO subscribe (firstname, lastname, email) VALUES ('$firstname','$lastname','$email')";
   $result = mysqli_query($connection, $query);
 ?>
 
+<?php
+  require_once("inc/connect-db.php");
+  $query  = "SELECT * FROM subscribe";
+  $result = mysqli_query($connection, $query);
+?>
 
 
 <!DOCTYPE html>
@@ -36,7 +41,8 @@
 
 
 <main class="full-width">
-  <h2>Thank You 
+  <h2>
+    Thank You <?php echo $firstname; ?>
   </h2>
   <p>Go back to the <a href="subscribe.php">Sign Up Page</a>.</p>
 </main>
@@ -46,7 +52,7 @@
 </html>
 
 <?php
+  mysqli_free_result($result);
 
-  // 5. Close database connection
   mysqli_close($connection);
 ?>
