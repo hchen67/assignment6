@@ -11,12 +11,21 @@
 
 <body class='firstcontainer'>
 
+    
+
+
     <header class='banner'>
 
-  	      <h2 class='fly'> 3 Amazing British Musicians</h2>
-  	    
-           <?php include "inc/nav.php";?>
-      
+          <h1 class='fly'> 3 Amazing British Musicians</h2>
+
+<div class="inner-banner">
+        
+        <?php include "inc/nav.php";?>
+         
+
+          <div class="learnmore"><a href="content.php"> Learn more! ➧ </a></div>
+                
+</div>
 
     </header>
 
@@ -34,12 +43,11 @@
     <footer class='footer1'>
 
     <div class="homebotleft">
-          <p>CSC174 Midterm - Home</p>
+        <a href="http://csc174.org/midterm/hchen67/"> Original Website </a>
     </div>
 
-
     <div class='homebotright'>
-	        <p><a href="subscribe.php">Sign Up</a></p>
+	        <p><a href="subscribe.php">Subscribe</a></p>
     </div>
 
     </footer>
