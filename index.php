@@ -16,7 +16,7 @@
 
     <header class='banner'>
 
-          <h1 class='fly'> 3 Amazing British Musicians</h2>
+          <h2 class='fly'> 3 Amazing British Musicians</h2>
 
 <div class="inner-banner">
         
